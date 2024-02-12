@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8389e26-ebab-45ba-9177-2a45d5e72f57" name="Changes" comment="Write unit tests for all functions and add docstrings">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/DijktraTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/MyMinPriorityQueueTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/WeightedDirectedGraphTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyMinPriorityQueue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyMinPriorityQueue.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +98,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WeightedDirectedGraphTest.testClear">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="WeightedDirectedGraphTest.testAddEdge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -117,30 +113,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;WeightedDirectedGraphTest.testAddEdge&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="WeightedDirectedGraphTest.testAddVertex" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;WeightedDirectedGraphTest.testAddVertex&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -223,13 +195,20 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MainKt" />
+      <module name="Assignment03.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.WeightedDirectedGraphTest.testClear" />
         <item itemvalue="Gradle.WeightedDirectedGraphTest.testGetVertices" />
         <item itemvalue="Gradle.WeightedDirectedGraphTest.testAddEdge" />
         <item itemvalue="Gradle.WeightedDirectedGraphTest.testGetEdges" />
-        <item itemvalue="Gradle.WeightedDirectedGraphTest.testAddVertex" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707708482241</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Write unit tests for all functions and add docstrings">
+      <option name="closed" value="true" />
+      <created>1707714836503</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707714836503</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
