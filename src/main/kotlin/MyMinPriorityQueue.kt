@@ -1,5 +1,8 @@
 package org.example
 
+/**
+ *
+ */
 class MyMinPriorityQueue<T>: MinPriorityQueue<T> {
         private var queue = MinHeap<T>()
         /**
@@ -11,6 +14,8 @@ class MyMinPriorityQueue<T>: MinPriorityQueue<T> {
 
         /**
          * Add [elem] with at level [priority]
+         * @param elem the element to be added to the queue
+         * @param priority the priority of the element, with lower values indicating higher priority
          */
         override fun addWithPriority(elem: T, priority: Double) {
             queue.insert(elem, priority)

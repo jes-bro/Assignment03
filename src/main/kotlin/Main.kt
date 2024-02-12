@@ -1,6 +1,14 @@
 package org.example
 
-fun dijkstras(graph: Graph<Int>, startNode: Int, endNode: Int):MutableList<Int> {
+/**
+ * Implement Dijkstra's algorithm to calculate the path from a start node to an end node in a weighted
+ * directed graph
+ * @param graph A weighted directed graph of type WeightedDirectedGraph
+ * @param startNode The node (Int) where the path should begin
+ * @param endNode The node (Int) where the path should end
+ * @return A [MutableList] that contains the shortest path between the start and end nodes
+ */
+fun dijkstras(graph: Graph<Int>, startNode: Int, endNode: Int):MutableList<Int>? {
     val numVertices = graph.getVertices().size
     println(numVertices)
     // Initialize everything to infinity except for startNode, which is initialized to
@@ -51,28 +59,28 @@ fun dijkstras(graph: Graph<Int>, startNode: Int, endNode: Int):MutableList<Int> 
         currentNode = prev[currentNode] ?: break
         shortestPath.add(currentNode)
     }
+    if (shortestPath.size == 1) {
+        return null
+    }
     shortestPath.reverse()
     return shortestPath
 }
 fun main() {
     val graph = WeightedDirectedGraph<Int>()
+    // Assuming your Graph class has methods to add vertices and edges
     graph.addVertex(0)
     graph.addVertex(1)
+    graph.addEdge(0, 1, 1.0) // Connected component 1
+
     graph.addVertex(2)
-    graph.addVertex(3)
-    graph.addVertex(4)
-    graph.addEdge(0, 1, 4.0)
-    graph.addEdge(0, 2, 1.0)
-    graph.addEdge(2, 1, 2.0)
-    graph.addEdge(1, 3, 1.0)
-    graph.addEdge(2, 3, 5.0)
-    graph.addEdge(3, 4, 3.0)
+    graph.addVertex(3) // Connected component 2, no edges connecting to component 1
 
     val startNode = 0
-    val endNode = 4
+    val endNode = 3
+    val shortestPath = dijkstras(graph, startNode, endNode)
+
     println("graph edges: ${graph.getEdges(startNode)}")
     println("vertices: ${graph.getVertices()}")
-    val shortestPath = dijkstras(graph, startNode, endNode)
     println("graph edges: ${graph.getEdges(startNode)}")
     println("Shortest path from $startNode to $endNode: $shortestPath")
 }
