@@ -1,7 +1,10 @@
 package org.example
 
 /**
- *
+ * An implementation of a minimum priority queue
+ * @param queue a minheap that stores the vertices and their
+ * priorities in order from minimum priority to maximum priority
+ * as depth increases
  */
 class MyMinPriorityQueue<T>: MinPriorityQueue<T> {
         private var queue = MinHeap<T>()

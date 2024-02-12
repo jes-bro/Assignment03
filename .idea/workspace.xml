@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8389e26-ebab-45ba-9177-2a45d5e72f57" name="Changes" comment="Write unit tests for all functions and add docstrings">
+    <list default="true" id="b8389e26-ebab-45ba-9177-2a45d5e72f57" name="Changes" comment="Put Dijkstras in the weighted directed graph class, put example implementation with Cape Cod beaches in main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyMinPriorityQueue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyMinPriorityQueue.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WeightedDirectedGraph.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/DijktraTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/DijktraTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/MyMinPriorityQueueTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MyMinPriorityQueueTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/WeightedDirectedGraphTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/WeightedDirectedGraphTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build Assignment03.executor": "Run",
+    "Gradle.DijkstraTest.executor": "Run",
     "Gradle.DijkstraTest.testEmptyGraph.executor": "Run",
     "Gradle.DijkstraTest.testGraphWithOneEdge.executor": "Run",
     "Gradle.DijkstraTest.testLongCompetingPaths.executor": "Run",
@@ -61,10 +66,12 @@
     "Gradle.MinHeapTest.insert.executor": "Run",
     "Gradle.MinHeapTest.isEmpty.executor": "Run",
     "Gradle.MinHeapTest.testInfiniteValues.executor": "Run",
+    "Gradle.MyMinPriorityQueueTest.executor": "Run",
     "Gradle.MyMinPriorityQueueTest.testAddWithPriority.executor": "Run",
     "Gradle.MyMinPriorityQueueTest.testAdjustPriority.executor": "Run",
     "Gradle.MyMinPriorityQueueTest.testIsEmpty.executor": "Run",
     "Gradle.MyMinPriorityQueueTest.testNext.executor": "Run",
+    "Gradle.WeightedDirectedGraphTest.executor": "Run",
     "Gradle.WeightedDirectedGraphTest.testAddEdge.executor": "Run",
     "Gradle.WeightedDirectedGraphTest.testAddVertex.executor": "Run",
     "Gradle.WeightedDirectedGraphTest.testClear.executor": "Run",
@@ -98,7 +105,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager">
     <configuration name="WeightedDirectedGraphTest.testAddEdge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -266,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707714836503</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Put Dijkstras in the weighted directed graph class, put example implementation with Cape Cod beaches in main">
+      <option name="closed" value="true" />
+      <created>1707716429753</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707716429753</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +292,7 @@
     <MESSAGE value="Heap reference implementation is ready" />
     <MESSAGE value="FInish Dijkstras implementation pre-test" />
     <MESSAGE value="Write unit tests for all functions and add docstrings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Write unit tests for all functions and add docstrings" />
+    <MESSAGE value="Put Dijkstras in the weighted directed graph class, put example implementation with Cape Cod beaches in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put Dijkstras in the weighted directed graph class, put example implementation with Cape Cod beaches in main" />
   </component>
 </project>

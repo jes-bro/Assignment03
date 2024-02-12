@@ -41,7 +41,7 @@ class MyMinPriorityQueueTest {
     fun testAddWithPriority() {
         val queue = MyMinPriorityQueue<Int>()
         queue.addWithPriority(1, 5.0)
-        queue.addWithPriority(2, 1.0) // This should be the next element
+        queue.addWithPriority(2, 1.0)
         val next = queue.next()
         assertEquals(2, next, "The element with the lowest priority value / highest position should be returned first")
 
@@ -54,7 +54,7 @@ class MyMinPriorityQueueTest {
     fun testNext() {
         val queue = MyMinPriorityQueue<Int>()
         queue.addWithPriority(1, 1.0)
-        queue.addWithPriority(2, 0.5) // Lower priority number, higher actual priority
+        queue.addWithPriority(2, 0.5)
 
         val firstNext = queue.next()
         assertEquals(2, firstNext, "The lower priority number in the queue should be returned first")
@@ -73,7 +73,7 @@ class MyMinPriorityQueueTest {
         queue.addWithPriority(2, 2.0)
         queue.addWithPriority(3, 3.0)
 
-        // Adjust the priority of element 3 to be higher than others
+        // Make the priority of 3 higher
         queue.adjustPriority(3, 0.5)
 
         val next = queue.next()

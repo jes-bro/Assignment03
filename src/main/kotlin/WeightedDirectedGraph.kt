@@ -1,5 +1,11 @@
 package org.example
 
+/**
+ * A class that consists of a weighted directed graph.
+ * @property vertices a mutable set of the vertices in the graph
+ * @property edges a mutable map of vertices to its outgoing neighbors and the weights
+ * of those connections
+ */
 class WeightedDirectedGraph <VertexType>: Graph<VertexType>{
     /**
      * @return the vertices in the graph

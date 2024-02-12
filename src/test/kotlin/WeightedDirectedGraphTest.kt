@@ -5,7 +5,9 @@ import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 /**
- *
+ * A collection of tests to ensure that the methods of
+ * weighted directed graph (aside from the dijkstra method)
+ * work as intended
  */
 class WeightedDirectedGraphTest {
     /**

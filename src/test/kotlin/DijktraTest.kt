@@ -1,10 +1,10 @@
 import org.example.WeightedDirectedGraph
-import org.example.dijkstras
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 /**
- *
+ * A collection of tests to ensure the dijkstra method (of the weighted directed graph
+ * class) works correctly
  */
 class DijkstraTest {
 
@@ -17,14 +17,14 @@ class DijkstraTest {
         val graph = WeightedDirectedGraph<Int>()
         graph.addVertex(0)
         graph.addVertex(1)
-        graph.addEdge(0, 1, 1.0) // Connected component 1
+        graph.addEdge(0, 1, 1.0)
 
         graph.addVertex(2)
-        graph.addVertex(3) // Connected component 2, no edges connecting to component 1
+        graph.addVertex(3)
 
         val startNode = 0
         val endNode = 3
-        val shortestPath = dijkstras(graph, startNode, endNode)
+        val shortestPath = graph.dijkstras(graph, startNode, endNode)
 
         assertEquals(null, shortestPath, "The path should be null for a disconnected graph")
     }
@@ -37,10 +37,10 @@ class DijkstraTest {
         val graph = WeightedDirectedGraph<Int>()
         graph.addVertex(0)
         graph.addVertex(1)
-        graph.addEdge(0, 1, 1.0) // Connected component 1
+        graph.addEdge(0, 1, 1.0)
         val startNode = 0
         val endNode = 1
-        val shortestPath = dijkstras(graph, startNode, endNode)
+        val shortestPath = graph.dijkstras(graph, startNode, endNode)
         assertEquals(mutableListOf(0, 1), shortestPath, "The shortest path should be between the only two vertices in the graph")
     }
 
@@ -58,15 +58,15 @@ class DijkstraTest {
         graph.addVertex(4)
 
         graph.addEdge(0, 1, 1.0)
-        graph.addEdge(1, 4, 1.0) // Short path
+        graph.addEdge(1, 4, 1.0)
 
         graph.addEdge(0, 2, 5.0)
         graph.addEdge(2, 3, 5.0)
-        graph.addEdge(3, 4, 1.0) // Long path
+        graph.addEdge(3, 4, 1.0)
 
         val startNode = 0
         val endNode = 4
-        val shortestPath = dijkstras(graph, startNode, endNode)
+        val shortestPath = graph.dijkstras(graph, startNode, endNode)
 
         val expectedPath = mutableListOf(0, 1, 4)
         assertEquals(expectedPath, shortestPath, "The short path should be selected by the algorithm")

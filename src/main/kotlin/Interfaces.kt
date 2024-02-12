@@ -11,12 +11,17 @@ interface Graph<VertexType> {
     fun getVertices(): Set<VertexType>
 
     /**
-     * Add an
+     * Add an edge to the graph
+     * @param from the vertex from which the edge comes
+     * @param to the vertex that which the edge goes to
      */
     fun addEdge(from: VertexType, to: VertexType, cost: Double)
 
     /**
-     *
+     * Get a map of the edges connected to a particular node
+     * in the graph
+     * @from the vertex to check the neighbors of
+     * @return a map of neighboring vertices to their weights
      */
     fun getEdges(from: VertexType): Map<VertexType, Double>
 
